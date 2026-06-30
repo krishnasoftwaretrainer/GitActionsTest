@@ -18,7 +18,7 @@ public class SwagTeast
 	public void BrowserSetup() throws InterruptedException
 	{
 		options=new ChromeOptions();
-		options.addArguments("--headless");
+		options.addArguments("--headless", "--disable-gpu");
 		driver = new ChromeDriver(options);
 		Thread.sleep(2000);
 		driver.manage().window().maximize();
